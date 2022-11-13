@@ -1,0 +1,15 @@
+Clonar un repositorio existente
+$ git clone "link del repositorio"
+
+Crear un nuevo repositorio local
+$ git init
+
+Crear una nueva rama 
+$ git branch "nombre de la rama"
+
+Cambiar de rama
+$ git checkout "nombre de la rama"
+
+Crear y posicionarse en la rama
+$ git checkout -b "nombre de la rama"
+

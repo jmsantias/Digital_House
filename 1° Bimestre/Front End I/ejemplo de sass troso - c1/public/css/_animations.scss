@@ -1,0 +1,85 @@
+/* animaciones declaradas */
+
+
+/* breve descripcion de la animación */
+
+@keyframes animacion-baja {
+    from {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes animacion-sube {
+    from {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes animacion-derecha {
+    from {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes animacion-izquierda {
+    from {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-20px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+/*AÑADIR UNA ANIMACION MAS SIGUIENDO EL PATRON DE CLASE UTILIZADO */
+
+
+/* .animacion- ... */
+
+
+/* Clases para utilizar las animaciones */
+
+.animacion {
+    &-baja {
+        &:hover {
+            animation: animacion-baja 2s linear;
+            animation-iteration-count: 1;
+        }
+    }
+    &-derecha {
+        &:hover {
+            animation: animacion-derecha 2s linear infinite;
+        }
+    }
+    &-sube {
+        &:hover {
+            animation: animacion-sube 2s linear infinite;
+        }
+    }
+    &-izquierda {
+        &:hover {
+            animation: animacion-izquierda 2s linear infinite;
+        }
+    }
+}

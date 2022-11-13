@@ -1,0 +1,468 @@
+/* Se realizó el código en 1440 (mi monitor es de 1920) */
+
+/* ESTILO GENERAL */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  margin: 5%;
+}
+
+main {
+  margin: 5%;
+}
+
+h2 {
+  font-size: 39px;
+}
+
+ul {
+  list-style: none;
+}
+
+.startedBtn {
+  color: white;
+  background-color: #8b48bf;
+  padding: 15px 40px;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+/* HEADER */
+
+.listaHeader {
+  display: flex;
+  justify-content: space-evenly;
+  width: 35vw;
+  font-size: 13px;
+  color: #242e52;
+  padding: 0;
+}
+
+.listaHeader a {
+  text-decoration: none;
+  color: #242e52;
+}
+
+#burguer {
+  display: none;
+}
+
+/* MAIN */
+/* PRIMER BLOQUE */
+
+.bloque1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.upLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 0 5%;
+}
+
+h1 {
+  font-size: 58px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.upLeft p {
+  font-size: 17px;
+  font-weight: 500;
+  padding-right: 5%;
+  margin-right: 30%;
+}
+
+#grafica img {
+  margin: 0;
+}
+
+/* SEGUNDO BLOQUE */
+
+.bloque2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.downLeft {
+  margin: 5% 0 0 4%;
+}
+
+.downLeft h2 {
+  margin-top: 3%;
+}
+
+.downLeft p {
+  margin-right: 30%;
+}
+
+.downRight {
+  margin: 5% 0 0 10%;
+}
+
+.downRight p {
+  margin-left: 13.5%;
+  margin-right: 15%;
+  color: #b3b2b7;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+.downRight span {
+  color: white;
+  background-color: #8b48bf;
+  border-radius: 30px;
+  padding: 10px 25px;
+  margin-right: 2.5%;
+}
+
+/* TERCER BLOQUE (CARTAS) */
+
+.galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10% 0;
+}
+
+.galeria h2 {
+  margin-bottom: 9%;
+  margin-top: 0;
+}
+
+.carrusel {
+  display: flex;
+  background-color: #fafafa;
+}
+
+.carta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.galeria img {
+  position: relative;
+  bottom: 20%;
+}
+
+.galeria p {
+  text-align: center;
+  color: #b9b9c1;
+  margin: 0 8%;
+  padding-bottom: 10%;
+}
+
+.galeria button {
+  margin-top: 5%;
+}
+
+/* PRE FOOTER */
+
+.preFooter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #8b48bf;
+  height: 30vh;
+}
+
+.preFooter button {
+  padding: 15px 40px;
+  color: #8b48bf;
+  background-color: white;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+.preFooter h2 {
+  width: 35%;
+  color: white;
+  text-align: left;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1e1e26;
+  margin: 0;
+  height: 30vh;
+}
+
+/* IZQUIERDA */
+
+.logoFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 5%;
+}
+
+.redes {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* CENTRO */
+
+.navFooter {
+  display: flex;
+  color: white;
+  align-items: center;
+}
+
+footer li {
+  margin: 20px 70px;
+}
+
+#segundaColumna {
+  margin-bottom: 50px;
+}
+
+.navFooter a {
+  text-decoration: none;
+  color: white;
+}
+
+/* DERECHA */
+
+.formFooter p {
+  color: #8c8c94;
+}
+
+.formFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+form {
+  display: flex;
+  color: #a0a0a0;
+}
+
+#email {
+  border-radius: 50px;
+  padding: 10px 30px;
+}
+
+form button {
+  padding: 10px 20px;
+  color: white;
+  background-color: #8b48bf;
+  border-radius: 50px;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+  border-style: none;
+  margin-left: 15px;
+}
+
+/* PSEUDOELEMENTOS */
+
+button:hover {
+  cursor: pointer;
+  background-color: #3cddf3;
+}
+
+.preFooter button:hover {
+  background-color: #3cddf3;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #8b48bf;
+  text-decoration: underline;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 480px) {
+  /* GENERAL */
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    margin: 0;
+  }
+
+  /* HEADER */
+
+  header {
+    margin: 10% 0;
+  }
+
+  .listaHeader {
+    display: none;
+  }
+
+  header button {
+    display: none;
+  }
+
+  #burguer {
+    display: block;
+  }
+
+  /* MAIN */
+
+  /* PRIMER BLOQUE */
+
+  #grafica {
+    width: 100vw;
+  }
+
+  #grafica img {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .bloque1 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .upLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10% 0;
+  }
+
+  .upLeft p {
+    text-align: center;
+    margin: 5% 5%;
+  }
+
+  /* SEGUNDO BLOQUE */
+
+  .bloque2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .downLeft {
+    margin: 5% 0;
+  }
+
+  .downLeft h2 {
+    text-align: center;
+  }
+
+  .downLeft p {
+    text-align: center;
+    margin: 5% 0;
+  }
+
+  .downRight h5 {
+    background: rgba(139, 72, 191, 0.3);
+    border-radius: 50px 0px 0px 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  /* CARTAS */
+
+  .cartaOculta {
+    display: none;
+  }
+
+  .galeria h2 {
+    margin-bottom: 25%;
+  }
+
+  .carrusel {
+    margin: 0 5%;
+  }
+
+  /* PRE FOOTER */
+
+  .preFooter {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+  }
+
+  .preFooter h2 {
+    width: 69%;
+    text-align: center;
+  }
+
+  /* FOOTER */
+
+  footer {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 60vh;
+  }
+
+  .formFooter {
+    display: flex;
+    align-items: center;
+  }
+
+  #email {
+    padding: 15px 60px;
+  }
+
+  .navFooter {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+  }
+
+  .navFooter li {
+    margin: 15px 0;
+  }
+
+  .redes {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10%;
+  }
+
+  .logoFooter {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100vw;
+    margin: 0;
+  }
+
+  .formFooter p {
+    display: flex;
+    position: absolute;
+    top: 95%;
+    background-color: #1e1e26;
+    width: 100vw;
+    justify-content: center;
+    margin: 0;
+    padding: 50px 0;
+  }
+}

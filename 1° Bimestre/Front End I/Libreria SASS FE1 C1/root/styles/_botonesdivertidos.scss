@@ -1,0 +1,26 @@
+@mixin botondivertido($bg-color, $color, $ancho, $alto) {
+    background-color: $bg-color;
+    width: $ancho;
+    height: $alto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: $color;
+    padding: 8px 14px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 1px 1px 6px 1px rgb(105, 105, 105);
+}
+
+.divertido {
+    &-chico-azul {
+        @include botondivertido(#1c1c8a, #fff, 150px, 36px);
+        font-size: 14px;
+    }
+    &-mediano-rojo {
+        @include botondivertido(#8a1c1c, #fff, 190px, 52px);
+    }
+    &-grande-amarillo {
+        @include botondivertido(#e5e167, #000, 250px, 80px);
+    }
+}

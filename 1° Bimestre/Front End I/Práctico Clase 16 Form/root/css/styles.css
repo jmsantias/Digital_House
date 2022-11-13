@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+    display:flex;
+    flex-direction: column;
+}
+
+#descuento {
+  background-color: #1cd1b0;
+  margin: 0;
+}
+
+#tienda {
+  background-color: #00669f;
+  color: white;
+}
+
+#navegacion {
+    
+}
+
+footer {
+  background-color: #00669f;
+  color: white;
+}

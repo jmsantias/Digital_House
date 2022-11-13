@@ -1,0 +1,22 @@
+/* Un mixin es un bloque de codigo que agrupa propiedades y valores y ADEMÁS le podemos pasar data */
+
+@mixin textos($tamanio, $color, $bg-color:transparent) {
+    color: $color;
+    background-color: $bg-color;
+    font-size: $tamanio;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.5;
+    text-decoration: none;
+    font-style: normal;
+}
+
+
+/* Clases para utilizar */
+
+.titulo {
+    @include textos(36px, #FAFAFA, rgb(77, 77, 77));
+}
+
+.parrafo {
+    @include textos(16px, #777777, transparent);
+}

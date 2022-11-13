@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/* animaciones declaradas */
+/* breve descripcion de la animación */
+@-webkit-keyframes animacion-baja {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes animacion-baja {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes animacion-sube {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes animacion-sube {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes animacion-derecha {
+  from {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes animacion-derecha {
+  from {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes animacion-izquierda {
+  from {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes animacion-izquierda {
+  from {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+/*AÑADIR UNA ANIMACION MAS SIGUIENDO EL PATRON DE CLASE UTILIZADO */
+/* .animacion- ... */
+/* Clases para utilizar las animaciones */
+.animacion-baja:hover {
+  -webkit-animation: animacion-baja 2s linear;
+          animation: animacion-baja 2s linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+.animacion-derecha:hover {
+  -webkit-animation: animacion-derecha 2s linear infinite;
+          animation: animacion-derecha 2s linear infinite;
+}
+.animacion-sube:hover {
+  -webkit-animation: animacion-sube 2s linear infinite;
+          animation: animacion-sube 2s linear infinite;
+}
+.animacion-izquierda:hover {
+  -webkit-animation: animacion-izquierda 2s linear infinite;
+          animation: animacion-izquierda 2s linear infinite;
+}
+
+.container-padre {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.container-padre .card, .container-padre .card-premium {
+  background-color: rgb(118, 118, 118);
+  color: rgb(8, 8, 61);
+  height: 400px;
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #c7c7c7;
+  box-shadow: 20px 20px 60px #a9a9a9, -20px -20px 60px #e5e5e5;
+  transition: all 0.75s;
+}
+.container-padre .card-premium {
+  background: rgb(8, 8, 61);
+  color: rgb(118, 118, 118);
+}
+
+/* Un mixin es un bloque de codigo que agrupa propiedades y valores y ADEMÁS le podemos pasar data */
+/* Clases para utilizar */
+.titulo {
+  color: #FAFAFA;
+  background-color: rgb(77, 77, 77);
+  font-size: 36px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  line-height: 1.5;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.parrafo {
+  color: #777777;
+  background-color: transparent;
+  font-size: 16px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  line-height: 1.5;
+  text-decoration: none;
+  font-style: normal;
+}
+
+body {
+  background-color: #c7c7c7;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* USO DE PARTIALS -> BLOQUE DE CODIGO QUE YO PIENSO REUTILIZAR EN OTROS PROYECTOS
+EL ARCHIVO SE ESCRIBE CON UN "_"ADELANTE DEL NOMBRE */
+/* ARMAR UN MIXIN PARA... BOTONES :D */
+/* D.R.Y -> Don't repeat yourself - No repetirme */
+/* SEPARATION OF CONCERNS -> SEPARAR CADA COSA SEGUN SU FUNCION *//*# sourceMappingURL=mainsass.css.map */

@@ -1,0 +1,141 @@
+/* estilos generales y elementos generales */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(32, 32, 32);
+}
+
+
+/* -> Tipografías */
+
+
+/* Montserrat */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+}
+
+.link:active {}
+
+.link:visited {}
+
+.button {
+    padding: 12px 32px;
+    border: 1px solid #FFF;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 50px;
+    color: #FFF;
+    margin: 0 5vw;
+}
+
+.principal {
+    border: 1px solid rgb(255, 246, 162);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+
+/* estilos del header */
+
+.header {
+    background-color: #000;
+    color: #fff;
+    height: 7vh;
+    width: 100vw;
+    /* vh es viewport height -> tamaño total de pantalla */
+}
+
+img {
+    width: 250px;
+}
+
+nav {
+    width: 40%;
+    /* % es respecto al contenedor padre */
+}
+
+.lista {
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+li {
+    margin: 0 20px;
+    /* ponerle min-width a los LI */
+    width: 300px;
+}
+
+.fa-bars {
+    display: none;
+}
+
+
+/* estilos del main */
+
+.banner {
+    width: 100vw;
+    height: 75vh;
+}
+
+img {
+    height: 50%;
+}
+
+div {
+    height: 25%;
+}
+
+section {
+    height: 25%;
+}
+
+.contenedor-botones {
+    margin: 2.5vh 10vw;
+}
+
+
+/* RESPONSIVE */
+
+
+/* MEDIA QUERIES */
+
+
+/* max-width -> HASTA 650px */
+
+
+/* min-width -> DESDE 650px */
+
+@media (max-width: 650px) {
+    /* ACA VA EL CODIGO CSS QUE QUIERO CAMBIAR */
+    nav {
+        display: none;
+    }
+    .fa-bars {
+        display: block;
+    }
+    .header {
+        justify-content: space-around;
+    }
+}
+
+
+/* CONSIGNAS: */
+
+
+/* 1) Que cuando el header sea mobile, tenga un background-image 
+    2) Que cuando el header mida más de 900px, su contenido se vea de color azul 
+    3) Que cuando el header mida menos de 300px aparezca un mensaje que diga "agrandá la pantalla por favor!" y el resto de elementos se oculten 
+
+3) Que cuando el header mida menos de 300px aparezca un mensaje que diga "agrandá la pantalla por favor!" y el resto de elementos se oculten */

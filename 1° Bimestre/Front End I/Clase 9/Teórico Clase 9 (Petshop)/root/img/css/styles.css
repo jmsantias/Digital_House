@@ -1,0 +1,29 @@
+/* ESTILOS DEL HEADER */
+
+header {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 36px;
+}
+
+/* ESTILOS DEL MAIN */
+
+.article-main {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.article-uno {
+    background-color: #ffb5b5;
+}
+
+.article-dos {
+    background-color: #cdffcd;
+}
+
+.article-tres {
+    background-color: #bdbdff;
+}
+
+.imagen-medium {
+    width: 400px;
+    height: 400px;
+}

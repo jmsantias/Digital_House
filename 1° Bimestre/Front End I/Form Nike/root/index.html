@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <a href="./contact.html">Ir a contacto</a>
+
+    <section class="flex-column-center container-form">
+        <img src="#" alt="logo">
+        <h2>Enterate antes que nadie</h2>
+        <p>Registrate para recibir los correos electrónicos de Nike y ser el primero en acceder a contenido inspirador y conocer las noticias y ofertas exclusivas.</p>
+        <form action="./data/form.php" method="POST" class="columna">
+            <!-- aca va el * con pseudoelemento -->
+            <label for="email">Dirección de Correo Electrónico</label>
+            <input type="email" name="email" id="email">
+            <section class="fila">
+                <div class="columna">
+                    <label for="fecha">Fecha de nacimiento</label>
+                    <input type="date" name="fecha" id="fecha">
+                </div>
+                <div class="columna">
+                    <label for="compra">Preferencia de compra</label>
+                    <select name="compra" id="compra">
+                        <option disabled selected>Elegir</option>
+                        <option value="hombre">Para hombre</option>
+                        <option value="mujer">Para mujer</option>
+                    </select>
+                </div>
+            </section>
+            <button type="submit" class="btn">Inscribite</button>
+
+        </form>
+
+        <p>Al registrarte, aceptás la Política de privacidad y los Términos de uso de Nike.</p>
+    </section>
+
+</body>
+
+</html>

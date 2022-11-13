@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* armamos un generador de boton primario, secundario y alternativo, pasándole un color */
+/* variable / nesting / shorthand & extend */
+/* VARIABLE */
+/* seteo la variable usando el simbolo $ delante de la palabra */
+/* NESTING -> anidamiento */
+/* SHORTHAND CON EXTEND */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  border: 2px solid #000;
+}
+.container .btn, .container .btn-alt, .container .btn-sec, .container .btn-pri {
+  width: 150px;
+  height: 60px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin: 5px 25px;
+  border-radius: 10px;
+}
+.container .btn-pri {
+  color: white;
+  border: none;
+  background-color: rgb(89, 186, 109);
+}
+.container .btn-sec {
+  background: none;
+  border: 2px solid rgb(89, 186, 109);
+}
+.container .btn-alt {
+  background: none;
+  border: none;
+  color: rgb(89, 186, 109);
+}
+
+/* DRY -> DONT REPEAT YOURSELF *//*# sourceMappingURL=main.css.map */

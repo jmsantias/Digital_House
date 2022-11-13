@@ -1,0 +1,90 @@
+/* estilos generales */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(32, 32, 32);
+}
+
+
+/* estilos del header */
+
+.header {
+    background-color: #000;
+    color: #fff;
+    height: 7vh;
+    width: 100vw;
+    /* vh es viewport height -> tamaño total de pantalla */
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 250px;
+}
+
+nav {
+    width: 40%;
+    /* % es respecto al contenedor padre */
+}
+
+ul {
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+li {
+    margin: 0 20px;
+    /* ponerle min-width a los LI */
+}
+
+
+/* OCULTA PERO NO REMUEVE EL ESPACIO 
+visibility:hidden */
+
+
+/* prueben si funciona con una etiqueta a */
+
+
+/* OCULTA Y REMUEVE EL ELEMENTO DEL ESPACIO 
+display:none */
+
+.fa-bars {
+    display: none;
+}
+
+
+/* RESPONSIVE */
+
+
+/* MEDIA QUERIES */
+
+
+/* max-width -> HASTA 650px */
+
+
+/* min-width -> DESDE 650px */
+
+@media (max-width: 650px) {
+    /* ACA VA EL CODIGO CSS QUE QUIERO CAMBIAR */
+    nav {
+        display: none;
+    }
+    .fa-bars {
+        display: block;
+    }
+    .header {
+        justify-content: space-around;
+    }
+}
+
+
+/* CONSIGNAS: */
+
+
+/* 1) Que cuando el header sea mobile, tenga un background-image 
+    2) Que cuando el header mida más de 900px, su contenido se vea de color azul 
+    3) Que cuando el header mida menos de 300px aparezca un mensaje que diga "agrandá la pantalla por favor!" y el resto de elementos se oculten */
