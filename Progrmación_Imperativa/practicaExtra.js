@@ -54,8 +54,24 @@ let arrayEdades = [18, 20, 21, 35, 67, 50, 18, 14, 7];
 // 1 - Funcion que reciba un array de edades y retorne el promedio 
 
 function promedioArray(array){
-    let promedio = 
+    let suma = 0;
+    let promedio;
     for(let i = 0; i < array.length; i++){
-        console.log(array[i] = array[i + 1]);
-    }
+        suma = suma + array[i];
+    };
+    return promedio = suma / array.length;
 }
+
+//console.log(promedioArray(arrayEdades));
+
+// 2 - Funcion que reciba un array de edades y retorne el mayor elemento
+
+function mayorDelArray(array){
+    let mayor;
+    for(let i = 0; i < array.length; i++){
+        mayor = Math.max.apply(array[i]);
+    }
+    return mayor;
+}
+
+console.log(mayorDelArray(arrayEdades));
