@@ -1,3 +1,4 @@
+USE dhnoticias;
 
 /*Ej 1*/
 
@@ -14,4 +15,12 @@ SELECT COUNT(*) AS 'Cantidad de Artículos', estadoart AS 'Estado' FROM articulo
 /*Ej 4*/
 
 SELECT id, nombre_recurso FROM recursos WHERE id IN (8, 16, 29, 35);
+
+/*Ej 5*/
+
+SELECT titulo, MIN(fechapublicacion) FROM articulos;
+
+/*Ej 6*/
+
+
 
