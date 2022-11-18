@@ -68,7 +68,7 @@ function promedioArray(array) {
 
 function encontrarElMayor(arr) {
   let elMayor = arr[0];
-  for (let i = 1; arr.length; i++) {
+  for (let i = 1; i < arr.length; i++) {
     if (arr[i] > elMayor) {
       elMayor = arr[i];
     }
@@ -76,4 +76,53 @@ function encontrarElMayor(arr) {
   return elMayor;
 }
 
-console.log(encontrarElMayor(arrayEdades));
+//console.log(encontrarElMayor(arrayEdades));
+
+// 3 - Funcion que reciba un array de edades y retorne el menor elemento // 5
+
+function encontrarElMenor(arr) {
+  let elMenor = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < elMenor) {
+      elMenor = arr[i];
+    }
+  }
+  return elMenor;
+}
+
+//console.log(encontrarElMenor(arrayEdades));
+
+// 4 - Funcion que reciba un array de edades y retorne true si encuentra algun elemento repetido o false caso contrario
+
+function numeroRepetido(arr) {
+  let repetidos = [];
+
+  for (let i = 0; i < arr.length - 1; i++) {// i = 0, i = 0, i = 0,
+    for (
+      let j = i + 1;
+      j < arr.length;
+      j++ // j = 1, j = 2, j = 3, j = 4
+    )
+      if (arr[i] == arr[j]) {
+        let bandera = true; //
+
+        for (let k = 0; k < repetidos.length; k++) {
+          if (arr[i] == repetidos[k]) {
+            bandera = false;
+          }
+        }
+        if (bandera == true) {
+          repetidos.push(arr[i]);
+        }
+      }
+  }
+  return repetidos;
+}
+
+//console.log(numeroRepetido(arrayEdades));
+
+// 5 - Funcion que reciba un array de edades y una edada buscar, retorne el primer índice si encuentra coincidencia o null caso contrario
+
+function encontradEdad(){
+  
+}
